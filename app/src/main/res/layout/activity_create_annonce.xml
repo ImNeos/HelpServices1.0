@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".PostAnnonce.CreateAnnonceActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:layout_alignParentTop="true"
+            android:id="@+id/scroll_seek"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:gravity="left|center"
+                    android:text="Créer une annonce"
+                    android:textColor="@color/colorLogo"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:textSize="30sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_annonce"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="17sp"
+                    android:hint="Titre de l'annonce"
+                    android:textColorHint="@color/PrimaryLogin"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    app:backgroundTint="@color/colorPrimary"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_annonce_heart"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:textSize="17sp"
+                    android:hint="Détail de l'annonce"
+                    android:textColorHint="@color/PrimaryLogin"
+                    android:gravity="left"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    app:backgroundTint="@color/colorPrimary"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Votre annonce"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorLogo"
+                    android:fontFamily="@font/averia_libre_light"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_help"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/averia_libre_light"
+                        android:text="Demande de l'aide"
+                        android:textSize="20dp"
+                        android:gravity="left|center"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkHelp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:buttonTint="#0881A3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_serv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/averia_libre_light"
+                        android:text="Propose un service"
+                        android:textSize="20dp"
+                        android:gravity="left|center"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkServ"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:buttonTint="#0881A3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lin_image"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/Ajouter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ajouter une image (cliquez dessus) "
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorLogo"
+                        android:fontFamily="@font/averia_libre_light"
+                        android:layout_centerVertical="true"/>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/Ajouter">
+
+                        <ImageView
+                            android:id="@+id/imageview"
+                            android:scaleType="fitCenter"
+                            android:layout_width="match_parent"
+                            android:src="@drawable/icons8_add_image"
+                            android:layout_height="match_parent" />
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/txt_coup_de_pouce"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="22sp"
+                    android:text="Prix solidaire"
+                    android:textColor="@color/colorLogo"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_expli"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/averia_libre_light"
+                        android:text="Etes-vous prêt à rémunérer pour cela ?"
+                        android:textSize="20dp"
+                        android:gravity="left|center"
+                        android:textColorHint="@color/PrimaryLogin" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkbox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:buttonTint="#0881A3" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_remu"
+                        android:layout_marginTop="10dp"
+                        android:inputType="numberDecimal"
+                        android:hint="Quel montant ?"
+                        android:textColorHint="@color/PrimaryLogin"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/averia_libre_light"
+                        android:textCursorDrawable="@drawable/cursor_shape"
+                        app:backgroundTint="@color/colorPrimary"/>
+
+                    <TextView
+                        android:id="@+id/txt_euros"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:text="€"
+                        android:layout_alignTop="@id/et_remu"
+                        android:layout_alignBottom="@id/et_remu"
+                        android:layout_toRightOf="@+id/et_remu"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/PrimaryLogin"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/li_livr"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_loca"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/averia_libre_light"
+                        android:text="Livraison ou envoi possible"
+                        android:textSize="20dp"
+                        android:gravity="left|center"/>
+
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkLoca"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:buttonTint="#0881A3" />
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:background="@drawable/button_debut_back"
+                    android:text="Publier l'annonce" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:background="@drawable/button_debut_back"
+                    android:text="Annuler"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <!--    <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3111812408178665/5344625905">
+        </com.google.android.gms.ads.AdView> -->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
+    </LinearLayout>
+
+
+
+</LinearLayout>

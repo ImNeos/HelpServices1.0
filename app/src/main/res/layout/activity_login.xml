@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LoginScreen.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorLogo">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/banner_image_4"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2">
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:gravity="left|center"
+                    android:text="Numéro de télephone : "
+                    android:textColor="@color/PrimaryLogin"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/im_country_flag"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_tel"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:hint="+32 - - - - - - - - -"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorText"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    android:textSize="16sp"
+                    app:backgroundTint="@color/colorLogo" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:gravity="left|center"
+                    android:text="Prénom/Pseudo : "
+                    android:textColor="@color/PrimaryLogin"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/et_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:hint="Example"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorText"
+                    android:textCursorDrawable="@drawable/cursor_shape"
+                    android:textSize="16sp"
+                    app:backgroundTint="@color/colorLogo" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/button_debut_back"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:text="@string/login_in"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2">
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/im_icon"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_contact_phone_black_24dp"
+        android:layout_centerInParent="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_above="@id/circle_center"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sc"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="center"
+                        android:text="@string/title_explication_tel"
+                        android:textSize="22sp" />
+
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginRight="30dp"
+                        android:textColor="@color/PrimaryLogin"
+                        android:fontFamily="@font/abhaya_libre"
+                        android:text="@string/message_explication_tel"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+
+
+            </ScrollView>
+
+
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/circle_left"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@id/circle_center"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icons8_circlefull"
+                android:layout_above="@id/lin"
+                android:layout_marginBottom="15dp"
+
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/circle_center"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icons8_circle"
+                android:layout_above="@id/lin"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/circle_right"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@id/circle_center"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icons8_circle"
+                android:layout_above="@id/lin"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/btn_go_next"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="45dp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_debut_back"
+                    android:layout_marginBottom="10dp"
+                    android:text="Continuer" />
+
+                <Button
+                    android:id="@+id/btn_precedent"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="45dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_debut_back"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="30dp"
+                    android:text="Précédent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

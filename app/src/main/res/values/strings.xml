@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">HelpServices</string>
+    <string name="title_activity_maps">Help\u0026Services</string>
+    <string name="Changedappname"><u><b><i>Help\u0026Services</i></b></u></string>
+
+
+    <string name="txt_forgotemail">Entrez l\'adresse email à laquelle vous êtes enregistré</string>
+    <string name="login">Connexion</string>
+    <string name="email">Email</string>
+    <string name="mot_de_passetxt">Mot de passe</string>
+    <string name="login_in">Se connecter</string>
+    <string name="register">S\'enregistrer</string>
+    <string name="password_forgotten">Mot de passe oublié</string>
+    <string name="already_have_an_acc">Déjà un compte?</string>
+
+
+    <!--
+     CODE : Login and register texts
+      -->
+
+    <string name="EnterEmail">Merci d\'entrer votre adresse email</string>
+    <string name="EnterPassword">Merci d\'entrer un mot de passe</string>
+    <string name="EnterFirstName">Merci d\'entrer votre prénom</string>
+    <string name="EnterLastName">Merci d\'entrer votre nom</string>
+
+    <string name="pr_nom">Prénom</string>
+    <string name="CreatedAcc">Création du compte</string>
+    <string name="waiting">Merci de patienter.</string>
+    <string name="loggin">Connexion en cours</string>
+    <string name="AccCreating">Création de votre compte</string>
+    <string name="Error">Error :</string>
+
+
+    <!--
+    CODE : Create new events
+
+    -->
+
+    <string name="nom">Nom</string>
+    <string name="date">Date de l\'événement</string>
+    <string name="create_event">Créer</string>
+    <string name="event_enter_name">Merci d\'entrer un nom</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Main Screen
+    -->
+    <string name="MyEvents">Mes événements</string>
+    <string name="MyFavorites">Favoris</string>
+
+
+    <!-- Inside Event
+
+    -->
+    <string name="Mypicture">Mes photos</string>
+    <string name="Actu">Actualité</string>
+    <string name="CameraOrGallery">Camera ou gallerie?</string>
+    <string name="phonenumer">Entrez votre numéro de téléphone</string>
+    <string name="entrez_votre_pr_nom_pseudo">Entrez votre prénom/pseudo</string>
+
+
+    <string name="VerifSms">Vérification sms</string>
+    <string name="message_explication_tel">Bonjour, voici une petite explication du fonctionnement de l\'application: Il vous suffit d\'entrer votre numéro de téléphone</string>
+    <string name="title_explication_tel">Vérification de votre identité</string>
+    <string name="expli_go_next">J\'ai compris</string>
+    <string name="precedent">Précédent</string>
+    <string name="annuler">Annuler</string>
+    <string name="jaicompris">J\'ai compris</string>
+
+
+</resources>

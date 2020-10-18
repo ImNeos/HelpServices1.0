@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/UnderPrim"
+    card_view:cardCornerRadius="20dp"
+    android:id="@+id/cardview"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/LayNom"
+                android:layout_alignParentLeft="true"
+                android:text="Titre"
+                android:fontFamily="@font/alfa_slab_one"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/alfa_slab_one"
+                android:maxLines="1"
+                android:gravity="right"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="Thomas"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:id="@+id/LayNom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_name"
+                android:fontFamily="@font/alfa_slab_one"
+                android:paddingTop="10dp"
+                android:text="De "
+                android:textColor="@color/colorLogo" />
+
+        </RelativeLayout>
+
+        <View android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp">
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:src="@drawable/rounded_bgnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txt_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:paddingLeft="5dp"
+                android:text="Coeur"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="top"
+                android:textColor="@color/colorLogo" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="11dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/sentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Envoyé le "
+                android:textColor="@color/colorLogo"/>
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:paddingLeft="5dp"
+                android:text="TEMPS"
+                android:layout_toRightOf="@id/sentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLogo"
+                android:fontFamily="@font/alfa_slab_one"/>
+
+        </RelativeLayout>
+
+        <View android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/LayDist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Distance de vous: "
+                android:textColor="@color/colorText"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:textColor="@color/colorText"
+                android:layout_toRightOf="@+id/LayDist"/>
+
+            <TextView
+                android:id="@+id/txt_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_toRightOf="@+id/txt_distance"
+                android:textColor="@color/colorText"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Km" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/LayPouce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:paddingLeft="10dp"
+                android:text="Coup de pouce :"
+                android:textColor="@color/colorLogo"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txt_prix"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:textColor="@color/colorText"
+                android:layout_toRightOf="@+id/LayPouce"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_prix"
+                android:fontFamily="@font/alfa_slab_one"
+                android:textColor="@color/colorText"
+                android:text="€" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

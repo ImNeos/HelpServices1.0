@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+
+    <style name="AlfaSlabOne">
+        <item name="android:fontFamily">@font/alfa_slab_one</item>
+    </style>
+
+    <style name="TabLayoutTextFont" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/averia_libre_light</item>
+    </style>
+
+    <style name="AveriaLight">
+        <item name="android:fontFamily">@font/averia_libre_light</item>
+    </style>
+
+
+    <style name="EditTextTintTheme" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
+
+    <style name = "ExplainAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="Theme_Dialog_full" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name ="AlerDialog" parent = "Base.Theme.AppCompat.Light.Dialog"/>
+
+
+    <style name="FullScreenTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+
+</resources>

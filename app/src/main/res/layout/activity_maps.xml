@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map.MapsActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0881A3"
+        android:src="@drawable/banner_image_4"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.9"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/btn_post_annonce"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_debut_back"
+            android:fontFamily="@font/averia_libre_light"
+            android:textAllCaps="false"
+            android:text="Poster\n une annonce"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/btn_help"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_debut_back"
+            android:fontFamily="@font/averia_libre_light"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Consulter\n les annonces"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_profil"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="0dp"
+        android:background="@drawable/button_debut_back"
+        android:text="Mon profil"
+        android:fontFamily="@font/averia_libre_light"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"></LinearLayout>
+
+
+
+
+
+    <!--   <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3111812408178665/6598191340">
+        </com.google.android.gms.ads.AdView>  -->
+
+
+</LinearLayout>

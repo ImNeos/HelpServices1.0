@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+
+        android:title="Feedback"
+        android:id="@+id/callfeedback"
+        app:showAsAction="never"
+        >
+
+    </item>
+
+
+
+    <item
+
+        android:title="Page Facebook"
+        android:id="@+id/callFaceBook"
+        app:showAsAction="never"
+        >
+
+    </item>
+
+
+    <item
+
+        android:title="Permissions"
+        android:id="@+id/callPermissions"
+        app:showAsAction="never"
+        >
+
+    </item>
+
+
+
+
+</menu>

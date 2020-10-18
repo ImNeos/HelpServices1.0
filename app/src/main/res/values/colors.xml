@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0881A3</color>
+    <color name="colorPrimaryDark">#0881A3</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <color name="PrimaryLogin">#6E6A72</color>
+
+
+    <color name="colorLogo">#0881A3</color>
+
+
+
+    <color name="Primary">#C7EEFF</color>
+    <color name="UnderPrim">#98D4EE</color>
+    <color name="colorText">#142C36</color>
+
+    <color name="Second">#613F7C</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradStart">#FFA500</color>
+    <color name="gradStop">#FFD700</color>
+
+
+
+    <color name="proposColor">#D3D3D3</color>
+
+
+    <!-- Login color -->
+
+    <color name="colorInputDialog">#FFD700</color>
+    <color name="colorOkButton">#98D4EE</color>
+
+    <color name="colorExplainApp">#98D4EE</color>
+
+    <!-- D3D3D3  FFE4E1-->>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#F5F5F5</color>
+
+
+    <color name="buttonMapColor">#2C95D8</color>
+
+    <color name="GrisBgnd">#DCDCDC</color>
+
+
+</resources>

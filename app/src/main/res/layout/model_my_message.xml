@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/UnderPrim"
+    card_view:cardCornerRadius="20dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginHorizontal="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Titre"
+            android:fontFamily="@font/alfa_slab_one"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLogo" />
+
+        <View android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_width = "match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_heart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="COEUR"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/txt_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PHONE NUMBER"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textColor="@color/colorLogo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:text="TEMPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLogo"
+                android:fontFamily="@font/alfa_slab_one"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_time"
+                android:fontFamily="@font/alfa_slab_one"
+                android:paddingTop="10dp"
+                android:text="Envoyé le "
+                android:textColor="@color/colorLogo" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

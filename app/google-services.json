@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "579701459022",
+    "firebase_url": "https://solimarket-19ee5.firebaseio.com",
+    "project_id": "solimarket-19ee5",
+    "storage_bucket": "solimarket-19ee5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579701459022:android:a9dc6e4fd0fff1d39fdb1f",
+        "android_client_info": {
+          "package_name": "com.isma.soli.ad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579701459022-8j0468dn0lllcotnstocrfrues8anp1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.isma.soli.ad",
+            "certificate_hash": "dcfd7a304842b7bd037ab9061ea436d21ebadbd3"
+          }
+        },
+        {
+          "client_id": "579701459022-7i3jd6f1fs0pu2f7bge27f6puv17b1t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1Xo0ZKihhrTpe5yuYy2Dga5c0CY_ip90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579701459022-7i3jd6f1fs0pu2f7bge27f6puv17b1t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
