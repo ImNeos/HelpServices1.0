@@ -54,20 +54,20 @@ dependencies {
     //com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
 
 
-    implementation 'com.nabinbhandari.android:permissions:3.5'
+    implementation 'com.nabinbhandari.android:permissions:3.5' //cp
 
     //image
-    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0' //cp
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0' //cp
+
+    implementation 'id.zelory:compressor:2.1.0' //cp
 
 
     //lovely dialog
-    implementation 'com.yarolegovich:lovely-dialog:1.1.0'
+    implementation 'com.yarolegovich:lovely-dialog:1.1.0' //cp
 
-
-
-    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
-    implementation 'id.zelory:compressor:3.0.0'
-
+    //
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
